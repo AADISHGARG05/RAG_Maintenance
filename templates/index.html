@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Knowledge RAG Assistant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <i class="fas fa-microchip"></i> <span>MaintAI</span>
+            </div>
+            <button class="nav-cta" onclick="navigateToChat()">Launch App</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-badge">Next-Gen Maintenance Intelligence</div>
+            <h1 class="hero-title">Maintenance Knowledge <span class="text-gradient">RAG Assistant</span></h1>
+            <p class="hero-subtitle">An AI-powered Retrieval-Augmented Generation system for technicians</p>
+            <p class="hero-description">
+                Engineered to answer maintenance queries strictly from technical documents. 
+                Ensure accurate, hallucination-free responses by grounding every answer in your specific knowledge base.
+            </p>
+            <div class="hero-btns">
+                <button class="cta-button" onclick="navigateToChat()">
+                    <i class="fas fa-play-circle"></i> Chat Now
+                </button>
+                <a href="#about" class="secondary-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-project">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Beyond Standard AI</h2>
+                <p class="intro-text">
+                    Traditional LLMs can guess. Our RAG (Retrieval-Augmented Generation) system 
+                    combines semantic retrieval with natural language generation for industrial-grade accuracy.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>Vector Search</h3>
+                    <p>Uses semantic search to find relevant document chunks based on intent, not just keywords.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Document Retrieval</h3>
+                    <p>Retrieves precise sections from technical manuals before generating any response.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Local LLM Generation</h3>
+                    <p>Generates accurate answers using a local language model, keeping data private and grounded.</p>
+                </div>
+            </div>
+
+            <div class="system-explanation">
+                <i class="fas fa-shield-halved"></i>
+                <p>The system ensures that every answer is traceable to source documents, eliminating 
+                hallucinations and providing technicians with reliable, document-backed maintenance guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">The Engineering Core</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Core backend logic and AI orchestration.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper"><i class="fas fa-pepper-hot"></i></div>
+                    <h3>Flask</h3>
+                    <p>High-performance REST API development.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper"><i class="fas fa-database"></i></div>
+                    <h3>Qdrant</h3>
+                    <p>Vector database for high-speed semantic search.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper"><i class="fas fa-language"></i></div>
+                    <h3>Sentence Transformers</h3>
+                    <p>SOTA embeddings for deep understanding.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper">🦙</div>
+                    <h3>Ollama</h3>
+                    <p>Local LLM inference for privacy-first AI.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-wrapper"><i class="fas fa-file-pdf"></i></div>
+                    <h3>PDF Processing</h3>
+                    <p>Intelligent ingestion and semantic chunking.</p>
+                </div>
+            </div>
+            <div class="architecture-note">
+                <p><strong>Architecture:</strong> RESTful API design with modular components for scalability and maintainability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container">
+            <div class="me-grid">
+                <div class="me-text">
+                    <h2 class="section-title" style="text-align: left;">About the Developer</h2>
+                    <p class="developer-intro">
+                        I'm a final-year Data Science and AI student with a passion for machine learning, 
+                        large language models, and building practical systems that solve real-world problems.
+                    </p>
+                    <div class="profile-info">
+                        <p class="project-motivation">
+                            Developed to demonstrate production-ready RAG architecture, this project showcases 
+                            end-to-end AI engineering—from vector databases to LLM integration.
+                        </p>
+                        <p class="professional-note">
+                            Built with enterprise standards, this system is designed for technical teams 
+                            requiring scalable and maintainable AI solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Experience AI-Powered Maintenance?</h2>
+            <p class="cta-description">
+                Deploy the power of RAG technology and get accurate, 
+                document-backed answers to your maintenance queries instantly.
+            </p>
+            <button class="cta-button-large" onclick="navigateToChat()">Access Dashboard</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Maintenance Knowledge RAG Assistant. Portfolio & Technical Demonstration.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>

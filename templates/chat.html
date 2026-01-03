@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Assistant | Maintenance Knowledge RAG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-wrapper">
+        <nav class="chat-navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-microchip"></i>
+                    <span>MaintAI <small>Assistant</small></span>
+                </div>
+                <div class="nav-actions">
+                    <a href="/" class="back-home">
+                        <i class="fas fa-home"></i> <span>Home</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="chat-container">
+            <div id="chat-window" class="chat-window">
+                <div class="message assistant-message">
+                    <div class="bubble">
+                        <p>Hello! I am your Maintenance Knowledge RAG Assistant. Ask me any technical question, and I will answer based strictly on our document knowledge base.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <span>Thinking...</span>
+            </div>
+        </main>
+
+        <footer class="input-area">
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Type your maintenance query here..." autocomplete="off">
+                    <button id="send-btn" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="disclaimer">Answers are grounded in technical documentation.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
