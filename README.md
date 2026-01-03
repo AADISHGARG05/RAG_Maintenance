@@ -12,9 +12,11 @@ This project demonstrates a **fully deployed end-to-end AI application**, coveri
 👉 https://your-render-app-url.onrender.com  
 *(Link will be updated)*
 
-- Home Page → `/`
-- Chat Interface → `/ui`
-
+To test the RAG
+- You can as questions like - (From my uploaded documents on airline manuals)
+“How to replace a hydraulic pump?”
+“What causes landing gear extension failure?”
+“What are engine oil servicing steps?”
 ---
 
 ## 🚀 Key Features
