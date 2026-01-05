@@ -123,3 +123,11 @@ Grounded Answer + Sources
 ├── run_ingestion.py # Ingest documents into Qdrant
 └── test_rag.py # RAG pipeline test
 
+
+👨‍💻 Author
+
+Aadish Garg
+AI / Machine Learning Enthusiast
+🔗 LinkedIn: https://www.linkedin.com/in/aadish-garg/
+💻 GitHub: https://github.com/AADISHGARG05
+
