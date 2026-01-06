@@ -1,9 +1,8 @@
 flask
 flask-cors
 python-dotenv
-langchain
-langchain-community
 qdrant-client
+fastembed
 pdfplumber
 numpy
 tqdm
