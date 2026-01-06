@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: maintenance-rag-assistant1
-    runtime: python
-    pythonVersion: 3.10.13
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
