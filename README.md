@@ -9,8 +9,7 @@ This project demonstrates a **fully deployed end-to-end AI application**, coveri
 ## 🌐 Live Demo
 
 🚀 **Deployed on Render:**  
-👉 https://your-render-app-url.onrender.com  
-*(Link will be updated)*
+👉 https://rag-maintenance-2.onrender.com
 
 To test the RAG
 - You can as questions like - (From my uploaded documents on airline manuals)
